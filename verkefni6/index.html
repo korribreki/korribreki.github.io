@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="Nemandi">
+    <title>Verkefni 1. Vinnurammi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/1-pop.css">
+    <link rel="stylesheet" href="css/2-new.css">
+    <link rel="stylesheet" href="css/3-grid.css">
+    <link rel="stylesheet" href="css/4-custom.css">
+    <link rel="stylesheet" href="css/5-form.css">
+    <link rel="stylesheet" href="css/6-table.css">
+    <link rel="stylesheet" href="css/7-menues.css">
+    <link rel="stylesheet" href="css/8-accordion.css">
+    <link rel="stylesheet" href="css/9-takki.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="css/10-icons.css">
+    <link rel="stylesheet" href="css/11-kvikun.css">
+    <link rel="stylesheet" href="css/12-slide.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    
+    <!--  <link rel="stylesheet" href="css/1-accordion.css">  -->
+
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+<body>
+  <div class="menuBg">
+    <div><span class="icon-g-logo"></span></div>
+    <input type="checkbox" id="inputmenu">
+    <label for="inputmenu" class="labelmenu"> &#9776;</label>
+    <nav class="topmenu">
+      <a href="index.html"><span class="icon-home"></span>Forsíðan</a>
+      <a href="#hver"><span class="icon-pacman"></span>Who</a>
+      <a href="#hvar"><span class="icon-pushpin"></span>Where</a>
+      <a href="#hvenar"><span class="icon-alarm"></span>When</a>
+      <a href="#checkin"><span class="icon-mobile2"></span>Order</a>
+      <a href="#login"><span class="icon-display"></span>Login</a>
+      <div class="social">
+        <a href="https://www.instagram.com"><span class="icon-instagram"></span></a>
+        <a href="https://www.x.com"><span class="icon-twitter"></span></a>
+        <a href="https://www.youtube.com"><span class="icon-youtube"></span></a>
+        <a href="https://www.facebook.com/"><span class="icon-facebook2"></span></a>
+      </div>
+    </nav>
+  </div>
+  <div class="centercause">
+    <img class="animate__backInDown" src="images/Cyberpunk-2077-Logo.png">
+  </div>
+  <header class="landing">
+    <section class="col-3">
+      <section>
+        <img class="animate__animated animate__slideInRight" src="images/cyberpunk2077img.jpg" width="100%">
+      </section>
+      <section>
+        <img class="animate__animated animate__slideInRight" src="images/phantomlibertyimg.png">
+      </section>
+      <section>
+        <img class="animate__animated animate__slideInRight" src="images/edgerunnersimg.jpg">
+      </section>
+     </section>
+  </header>
+  <h1>↓ TOUR CDPR TODAY ↓</h1>
+  <br>
+  <div class="bannerBg">
+    <section class="container">
+      <table>
+        <caption>Booking</caption>
+        <thead>
+            <tr>
+                <th>WHO</th>
+                <th>WHERE</th>
+                <th>WHEN</th>
+                <th>BOOK</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id= "hver" data-label="WHO">Marcin Iwiński</td>
+                <td id= "hvar" data-label="WHERE">CD Project Red Boston Studio. Tour starts at main entrance. </td>
+                <td id= "hvenar" data-label="WHEN">13:00-20:00</td>
+                <td id= "checkin" data-label="CHECK IN">
+                  <button class="shake">Buy Ticket</button>
+                </td>
+            </tr>
+            <tr>
+                <td id= "hver" data-label="WHO">Adam Badowski</td>
+                <td id= "hvar" data-label="WHERE">CD Project Red Vancouver Studio. Tour starts at main entrance. </td>
+                <td id= "hvenar" data-label="WHEN">13:00-20:00</td>
+                <td id= "checkin" data-label="CHECK IN">
+                  <button class="shake">Buy Ticket</button>
+                </td>
+            </tr>
+            <tr>
+                <td id= "hver" data-label="WHO">Michał Nowakowski</td>
+                <td id= "hvar" data-label="WHERE">CD Project Red Warsaw Studio. Tour starts at main entrance. </td>
+                <td id= "hvenar" data-label="WHEN">13:00-20:00</td>
+                <td id= "checkin" data-label="CHECK IN">
+                  <button class="shake">Buy Ticket</button>
+                </td>
+            </tr>
+            <tr>
+                <td id= "hver" data-label="WHO">Marcin Przybyłowicz </td>
+                <td id= "hvar" data-label="WHERE">CD Project Red Cracow Studio. Tour starts at main entrance.</td>
+                <td id= "hvenar" data-label="WHEN">13:00-20:00</td>
+                <td id= "checkin" data-label="CHECK IN">
+                  <button class="shake">Buy Ticket</button>
+                </td>
+            </tr>
+            <tr>
+                <td id= "hver" data-label="WHO">Mateusz Kanik</td>
+                <td id= "hvar" data-label="WHERE">CD Project Red Wrocław Studio. Tour starts at main entrance.</td>
+                <td id= "hvenar" data-label="WHEN">13:00-20:00</td>
+                <td id= "checkin" data-label="CHECK IN">
+                  <button class="shake">Buy Ticket</button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th><p></p></th>
+            <th>
+              CDPR Anniversary Event. 10.12.24
+            </th>
+            <th><p></p></th>
+            <th><p></p></th>
+        </tfoot>
+    </table>
+
+    </section>
+  </div>
+  <p></p>
+  <main>
+    <section class="col-2">
+      <section>
+          <!--              TETETETETETETETETETE           -->
+        <div id=slideset1>
+          <div>
+            <img src="images/cyberpunk-2077.jpg">
+          </div>
+          <div>
+            <img src="images/cplocation.jpg">
+          </div>
+          <div>
+            <img src="images/cyberpunk2077-its-good-to-be-in.jpg">
+          </div>
+          <div>
+            <img src="images/beautiful.jpg">
+          </div>
+        </div>
+  <!--              ESTESTESTESTESTESTESTESTESTESTESTEST        -->
+        <label for="tab-1"><h3>Harmonikulisti</h3></label>
+        <p></p>
+        <div class="a-tab">
+          <input id="tab-1" class="a-check" type="checkbox">
+          <label for="tab-1" class="a-label">Harmonika 1</label>
+          <div class="a-content">
+            <article>
+              <h2>Fyrirsögn</h2>
+              <h5>Áherslutexti H5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reiciendis aut repellendus, explicabo quae natus velit sit rem quaerat quibusdam eum tempore, dolore possimus nihil tempora quod ad nesciunt eveniet?</h5>
+            </article>
+          </div>
+        </div>
+        <p></p>
+        <div class="a-tab">
+          <input id="tab-2" class="a-check" type="checkbox">
+          <label for="tab-2" class="a-label">Harmonika 2</label>
+          <div class="a-content">
+            <article>
+              <h2>Undirfyrirsögn</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.
+              <blockquote><em>Blockqoute</em> Aperiam ratione id sunt, et obcaecati numquam repellat, molestias nam sed possimus adipisci similique inventore voluptatum quos repellendus eos reprehenderit nihil laboriosam!</blockquote></p>   
+            </article>
+          </div>
+        </div>
+        <section>
+
+        </section>
+        <p></p>
+        <div class="a-tab">
+          <input id="tab-3" class="a-check" type="checkbox">
+          <label for="tab-3" class="a-label">Harmonika 3</label>
+          <div class="a-content">
+            <article>
+              <h3>Millifyrirsögn</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p>      
+            </article>
+          </div>
+        </div>
+      </section>
+      <section>
+        <form action="takk.html" method="get">
+          <fieldset>
+            <legend>Skráningarform</legend>
+          <p><em>This is not a real form and does not submit or save any information.</em></p>
+          <form action="#" method="get">
+          <section class="col-2">
+          <p>
+              <label>First name</label><br>
+              <input type="text" name="first_name" required="" placeholder="John">
+          </p>
+          <p>
+              <label>Last name</label><br>
+              <input type="text" name="last_name" required="" placeholder="Doe">
+          </p>
+          </section>
+          <p>
+              <label>Gender</label><br>
+              <section class="col-3">
+                <label class="kyn">
+                    <input type="radio" name="gender" value="Male">
+                    Male
+                </label>
+                <label class="kyn">
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label>
+                <label class="kyn">
+                    <input type="radio" name="gender" value="other-none-na">
+                    Non-binary
+                </label>
+            </section>
+          </p>
+
+          <section class="col-2">
+          <p>
+              <label>Email</label><br>
+              <input type="email" name="email" required="@" placeholder="johndoe@gmail.com">
+          </p>
+          <p>
+              <label>Phone number</label><br>
+              <input type="tel" name="tel" pattern="^(\d{7}|\d{10})$" required="" placeholder="xxxxxxx">
+          </p>
+          </section>
+          <div class="spjallbox">
+            <input type="checkbox" id="inputmenu">
+          </div>
+          
+          <!--
+          <p>
+              <label>Password</label><br>
+              <input type="password" name="password" required="" placeholder="Password123">
+          </p>-->
+          <section class="col-3">
+          <p>
+            <label>Time</label>
+            <input type="time" name="time" />
+          </p>
+          <p>
+            <label>Day</label>
+            <input type="date" name="date"/>
+          </p>
+          <p>
+              <label>Country</label><br>
+              <select name="country">
+                  <option>China</option>
+                  <option>India</option>
+                  <option>United States</option>
+                  <option>Indonesia</option>
+                  <option>Brazil</option>
+                  <option value="Ísland">Iceland</option>
+              </select>
+          </p>
+        
+        </section>
+          <p>
+              <label>Comments</label><br>
+              <textarea></textarea>
+          </p>
+          <p>
+              <label>
+                  <input type="checkbox" value="terms">
+                  I agree to the <a>terms and conditions</a>
+              </label>
+          </p>
+          <p>
+              <button>Sign up</button>
+              <!--<button type="reset">Reset form</button>-->
+              <button disabled="disabled">Disabled</button>
+          </p>
+        </fieldset>
+      </form>
+      </form>
+        <h6>Undirmálstexti H6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</h6>
+      </section>
+    </section>
+
+    <label for="toggle" class="spjallbox"><span class="icon-bubbles4"></span></label>
+    <input type="checkbox" id="toggle">
+
+    <div class="login-box">
+      <fieldset>
+        <legend><h2>Innskráning</h2></legend>
+      <form>
+        <label for="username">Notendanafn</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Lykilorð</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="textarea">Skilaboð</label>
+        <input type="text" id="textarea" name="textarea" required>
+        
+        <button type="submit">Senda</button>
+      </form>
+    </fieldset>
+    </div>
+
+    <div id="login" class="overlay">
+      <div class="popup">
+        <h2>Velkomin/n</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <form action="takk.html" method="get">
+            <fieldset>
+              <legend>Innskráning: </legend>
+              <p>Notendanafn: <input type="text" required></p>
+              <p>Lykilorð: <input type="password" name="psw" required></p>
+              <p><input type="submit" value="Innskráning"></p>
+            </fieldset> 
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="col-3"> 
+    <nav>
+      <ul>
+        <li>Eveniet ducimus pariatur voluptate</li>
+        <li>Vitae animi, sed provident fuga</li>
+        <li>Lorem ipsum dolor sit amet consectetur</li>
+        <li>Provident sit aliquid a consequuntur</li>
+      </ul>
+    </nav>
+    <nav>
+      <ul>
+        <li>Eveniet ducimus pariatur voluptate</li>
+        <li>Vitae animi, sed provident fuga</li>
+        <li>Lorem ipsum dolor sit amet consectetur</li>
+        <li>Provident sit aliquid a consequuntur</li>
+      </ul>
+    </nav>
+    <dl>              <!--Description list -->
+      <dt>Nafn</dt>
+        <dd>-Kormákur Breki Gunnarsson</dd>
+      <dt>Tölvupóstur</dt>
+        <dd>korribreki@gmail.com</dd>
+      <dt>Vefhönnun</dt>
+        <dd>VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+    </dl>
+  </footer>
+    <p class="center">2 spönn, haust 2024.</p>
+</body>
+</html>

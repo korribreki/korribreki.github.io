@@ -1,0 +1,70 @@
+  .spjallbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--vsl-bg);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  .login-box {
+    position: fixed;
+    top: 50%;
+    left: 100%; 
+    transform: translate(-50%, -50%);
+    width: 18.8rem;
+    padding: 20px;
+    background-color: var(--nc-ac-1);
+    border-radius: .5rem;
+    opacity: 0;
+    transition: left 0.4s;
+    opacity: 0.4s;
+    z-index: 9;
+  }
+  
+  input[type="checkbox"]:checked ~ .login-box {
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .login-box h2 {
+    margin-top: 0;
+  }
+  
+  .login-box label {
+    display: block;
+    margin-top: 10px;
+  }
+  .login-box input[type="textarea"],
+  .login-box input[type="text"],
+  .login-box input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--nc-tx-1);
+    border-radius: 4px;
+  }
+  .login-box input[type="textarea"]{
+    padding-bottom: .5rem;
+  }
+
+
+  .login-box button {
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--vsl-bg);
+    color: var(--nc-tx-1);
+    border: 1.2px solid var(--nc-tx-1);
+  }
+  button{
+    background-color: var(--vsl-bg);
+  }

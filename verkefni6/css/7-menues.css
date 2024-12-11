@@ -1,0 +1,68 @@
+#inputmenu {
+    display: none;
+}
+
+.labelmenu {
+    position: fixed;
+    top: .5rem;
+    right: .5rem;
+    display: block;
+    width: 1.4rem;
+    font-size: 1.5rem;
+    border: 1px solid var(--nc-tx-2);
+    border-radius: 4px;
+    padding: .2rem rem;
+    background-color: var(--table-bg);
+    z-index: 9;
+}
+.topmenu {
+    position: fixed;
+    top: 3rem;
+    right: -46rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nc-ac-1);
+    width: 75%;
+    transition: all .5s ease-out;
+    z-index: 8;
+}
+.topmenu a {
+    font-size: .85rem;
+    display: block;
+    padding: 0 2.7rem .5rem 0;
+    color: var(--nc-tx-2);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid var(--nc-tx-2);
+}
+.social{
+    display: flex;
+}
+.social a{
+    padding: 0 1.2rem .5rem 0;
+}
+#inputmenu:checked ~ .topmenu {
+    right: 3rem;
+    transition: all .5s ease-in;
+}
+/*      VIÐMIÐ      */
+@media screen and (min-width:48rem) {
+    .menuBg {
+        background-color: var(--nc-ac-1);
+    }
+    .topmenu {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .topmenu a{
+        border-bottom: 0;
+    }
+    .labelmenu {
+        display: none;
+    }
+}
