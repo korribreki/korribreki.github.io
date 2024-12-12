@@ -1,0 +1,83 @@
+#slideset1 {
+    width: 97%;              
+    height: 15rem;
+    overflow: hidden;         
+    position: relative;       
+    margin-left: 0;         
+    margin-top: 20px;        
+    margin-bottom: 3rem;
+    padding: 0.6rem;          
+    border: 2px solid #333;  
+    background-color: #8f0101; 
+  }
+  #slideset1 > div {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;           
+    width: 100%;            
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #000;              
+    background-color: #8f0303;   
+    opacity: 0;              
+    z-index: 5;             
+  }
+  
+  /* Delays for Individual Slides */
+        /*
+        #slideset1 > div:nth-child(1) {
+          animation: autoplay1 16s infinite 0s;
+        }
+        #slideset1 > div:nth-child(2) {
+          animation: autoplay1 16s infinite 4s;
+        }
+        #slideset1 > div:nth-child(3) {
+          animation: autoplay1 16s infinite 8s;
+        }
+        #slideset1 > div:nth-child(4) {
+          animation: autoplay1 16s infinite 12s;
+        }*/
+  #slideset1 > * {visibility: hidden; position: absolute;
+    top: 0; left: 0; animation: 16s autoplay1 infinite}
+  #slideset1 > *:nth-child(1) {animation-delay: 0s}
+  #slideset1 > *:nth-child(2) {animation-delay: 4s}
+  #slideset1 > *:nth-child(3) {animation-delay: 8s}
+  #slideset1 > *:nth-child(4) {animation-delay: 12s}
+  /* Keyframes for Sliding and Fading In/Out */
+  @keyframes autoplay1 {
+    0%, 100% {
+      visibility: visible;
+      opacity: 1; /* Fully visible */
+      top: 0;     /* Start from the top */
+    }
+    33.33% {
+      opacity: 0; /* Fading out */
+      visibility: hidden;
+      top: -100%;  /* Slide up and out */
+    }
+    66.66% {
+      opacity: 0; /* Still fading out */
+      visibility: hidden;
+      top: -100%;
+    }
+    100% {
+      opacity: 1; /* Fully visible again */
+      visibility: visible;
+      top: 0;     /* Reset to the top */
+    }
+  }
+.centercause{
+    display: flex; 
+   justify-content: center;
+ }
+.landing {
+    display: flex; 
+   justify-content: center;
+ }
+h1{
+  font-family: "Orbitron", sans-serif;
+}
